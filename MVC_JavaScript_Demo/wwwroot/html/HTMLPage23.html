@@ -27,12 +27,14 @@
         new Chart(document.getElementById("barchartexample"), {
             type: 'horizontalBar',
             data: {
-                labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                labels: ["Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "Falkland Island",
+                    "French Guiana", "Guyana", "Paraguay", "Peru", "Suriname", "Uruguay", "Venezuela"],
                 datasets: [
                     {
                         label: "Population (millions)",
-                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                        data: [478, 267, 734, 784, 433]
+                        backgroundColor: ["#ff0000", "#cb4151", "#a0522d", "#faf0e6", "#ffba00", "#e5aa70", "#ffe135", "#bfff00", "#96a53c", "#006400", "#aaf0d1",
+                            "#b9f2ff", "#e7feff", "#cf71af"],
+                        data: [45195, 11673, 212559, 19116, 50882, 17643, 3, 298, 786, 7132, 32971, 586, 3473,28435]
                     },
                     {
                         label: "Area (sq mi)",
@@ -45,7 +47,7 @@
                 legend: { display: false },
                 title: {
                     display: true,
-                    text: 'Predicted world population (millions) in 2050'
+                    text: 'Predicted South America (millions) in 2050'
                 },
                 scales: {
                     yAxes: [{
